@@ -29,6 +29,91 @@ body {
     color: var(--text-color);
 }
 
+/* Reset default list styling */
+.main-nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  overflow: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+ 
+}
+
+/* Each tab */
+.main-nav li {
+  margin: 100%;
+  flex: 1;
+}
+
+/* Tab link styling */
+.main-nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 800px;
+  color: purple;
+  transition: all 0.3s ease;
+  border-right: 1px solid #ddd;
+}
+
+/* Remove border on last tab */
+.main-nav li:last-child a {
+  border-right: none;
+}
+
+/* Hover effect */
+.main-nav li a:hover {
+  background: #481e64;
+  color: white;
+}
+
+/* Active tab */
+.main-nav li a.active {
+  background: #2196F3;
+  color: white;
+  box-shadow: inset 0 -3px 0 #7a0909;
+}
+
+
+select {
+  width: 250px;
+  padding: 10px;
+  font-family: serif;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #0d0936;
+  border-radius: 8px;
+  background-color: white;
+  color: #130000;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #66237a;
+  box-shadow: 0 0 5px rgba(80, 16, 77, 0.5);
+}
+
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -61,7 +146,11 @@ body {
 .main-nav a {
     text-decoration: none;
     color: var(--text-color);
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 35px;
     font-weight: 600;
+    position: absolute;
     transition: color 0.3s ease;
 }
 
